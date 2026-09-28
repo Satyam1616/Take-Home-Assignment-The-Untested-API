@@ -1,5 +1,19 @@
 # Submission Notes
 
+## How to run
+
+Requires Node.js 18+.
+
+```bash
+cd task-api
+npm install
+npm start          # API on http://localhost:3000
+npm test           # run the test suite (42 tests)
+npm run coverage   # tests + coverage report (~94% statements)
+```
+
+The store is in-memory and resets on restart.
+
 ## Part C — `PATCH /tasks/:id/assign` design decisions
 
 - **Validation:** `assignee` must be a non-empty string. Empty string, whitespace-only,
