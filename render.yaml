@@ -1,0 +1,11 @@
+# Render Blueprint — deploys the Task API as a free web service.
+# In Render: New + > Blueprint > connect this repo > pick the `solution` branch.
+services:
+  - type: web
+    name: task-api
+    runtime: node
+    plan: free
+    rootDir: task-api        # the app lives in the task-api/ subfolder
+    buildCommand: npm install
+    startCommand: npm start  # node src/app.js — listens on process.env.PORT
+    healthCheckPath: /tasks  # returns 200 [] on an empty store
