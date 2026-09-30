@@ -1,5 +1,12 @@
 # Submission Notes
 
+## Links
+
+- **Live API:** https://task-api-klsa.onrender.com (try `GET /tasks` or `GET /tasks/stats`)
+- Hosted free on Render. Note: the free tier sleeps after ~15 min idle, so the
+  first request after a pause can take 30–50s to wake — subsequent requests are fast.
+- The store is in-memory, so data resets on each restart/redeploy (by design).
+
 ## How to run
 
 Requires Node.js 18+.
